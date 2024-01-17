@@ -38,6 +38,7 @@ p {
   padding-top: 0px;
   padding-bottom: 128px;
   position: relative;
+
 }
 .header_item{
  /* margin-top: 14px; */
@@ -331,14 +332,14 @@ width: 185px;
 }
 .hero_img1{
   position: absolute;
-  top: 8.5rem;
-  left: 14.5rem;
+  top: 12.5rem;
+  left: 23.5rem;
   bottom: 0rem;
   right: 0rem;
 }
 .vectoria{
   position: absolute;
-  height: 31rem;
+  height: 45rem;
   top: 0rem;
   left: -1rem;
   bottom: 0rem;
@@ -421,6 +422,7 @@ span{
   width: 100%;
   border-radius: 25px;
   margin-top: -27px;
+  border: 2px solid #F86CF8;
 }
 .crug{
   width: 120px;
@@ -449,7 +451,7 @@ span{
   width: 1200px;
   height: 148px;
   margin-top:400px;
-  padding: 20px 50px 503px;
+  padding: 30px 50px 503px;
 }
 .main_banner{
   margin-top: -35px;
@@ -466,7 +468,7 @@ footer{
   margin-left: 0px;
   overflow: hidden;
 }
-.footer_item1{margin-top: -41px;width: 150px;}
+.footer_item1,.footer_item2{margin-top: -41px;width: 150px;}
 .footer_btn{
 text-decoration: none;
 color: #FFF;
@@ -524,6 +526,9 @@ li.social-icon:hover {
   grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
   margin-left: -171px;
 }
+.footer_item1_mobail{
+ display: none;
+}
  /* адаптив */
 /* menu byrder */
 .burger {
@@ -541,7 +546,7 @@ li.social-icon:hover {
 #modal {
   max-width: 300px;
   height: 220px;
-  background: linear-gradient(97deg, rgba(248, 108, 248, 0.22) 12.04%, #00729C 81.84%);
+  background: #230637;
   position: absolute;
   top: -450px;
   left: 0px;
@@ -554,7 +559,17 @@ li.social-icon:hover {
   z-index: 99;
   padding-top: 10px;
 }
-
+.mobail_logo{
+  color: #FFF;
+  font-family: Orbitron;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  position: absolute;
+  top: 15px;
+}
 .burger-close {
   width: 25px;
   height: 25px;
@@ -732,6 +747,19 @@ margin-top: -61px;
 .vectoria {
   height: 29.8rem;
 }
+.hero_img1 {
+  top: 8.5rem;
+  left: 15rem;
+  bottom: 0rem;
+  right: 0rem;
+}
+.footer_item1_mobail{
+  display: block;
+  padding-left: 5px;
+}
+.footer_item2{
+  display: none;
+}
 }
 /* mobail */
 @media(max-width:750px) {
@@ -740,6 +768,10 @@ margin-top: -61px;
    }
    .header {
     gap:140px;
+}
+.footer_grid {
+  gap: 60px;
+  margin-left: -138px;
 }
 .header_nav a {
   font-size: 14px;
@@ -976,7 +1008,7 @@ h2 {
   gap:0px;
 }
 .footer_grid {
-  margin-left: 40px;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1117,7 +1149,7 @@ footer {
      display: flex;
   }
   .footer_grid {
-    margin-left: 81px;
+    margin-left: 8px;
 }
 li.social-icon {
   width: 25px;
@@ -1126,6 +1158,7 @@ li.social-icon {
 .footer_btn {
   font-size: 12px;
   margin-left: -35px;
+  width: 100;
 }
 span {
   font-size: 18px;
@@ -1166,7 +1199,7 @@ h2 {
 }
 .text_footer {
   font-size: 13px;
-  width: 123%;
+  width: 80%;
   line-height: 160%;
 }
   }
